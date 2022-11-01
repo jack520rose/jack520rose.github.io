@@ -186,7 +186,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-11-01 21:45:28 / Modified: 21:52:31" itemprop="dateCreated datePublished" datetime="2022-11-01T21:45:28+08:00">2022-11-01</time>
+      <time title="Created: 2022-11-01 21:45:28 / Modified: 22:03:02" itemprop="dateCreated datePublished" datetime="2022-11-01T21:45:28+08:00">2022-11-01</time>
     </span>
 
   
@@ -199,69 +199,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>GitHub仓库部署Blog</p>
-<h4 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h4><h5 id="node-js软件"><a href="#node-js软件" class="headerlink" title="node.js软件"></a>node.js软件</h5><h6 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h6><p>选择长期维护版进行下载，根据自己的系统版本进行选择</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://nodejs.org/zh-cn/download/</span><br></pre></td></tr></table></figure>
-
-<h6 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h6><h6 id="查看是否安装成功"><a href="#查看是否安装成功" class="headerlink" title="查看是否安装成功"></a>查看是否安装成功</h6><ul>
-<li>打开cmd</li>
-<li>在命令行输入<code>node -v</code></li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">v18.12.0</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="Git-for-Win软件"><a href="#Git-for-Win软件" class="headerlink" title="Git for Win软件"></a>Git for Win软件</h5><h6 id="下载地址-1"><a href="#下载地址-1" class="headerlink" title="下载地址"></a>下载地址</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://gitforwindows.org/</span><br></pre></td></tr></table></figure>
-
-<h6 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h6><p>一直下一步，直到选择终端时，选择Using windows default console windows</p>
-<h6 id="查看是否安装成功-1"><a href="#查看是否安装成功-1" class="headerlink" title="查看是否安装成功"></a>查看是否安装成功</h6><p>进入cmd命令，输入git查看</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git</span><br></pre></td></tr></table></figure>
-
-<h4 id="Github注册"><a href="#Github注册" class="headerlink" title="Github注册"></a>Github注册</h4><h5 id="登录网站"><a href="#登录网站" class="headerlink" title="登录网站"></a>登录网站</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/</span><br></pre></td></tr></table></figure>
-
-<h5 id="点击注册按钮-sign-up-for-Github"><a href="#点击注册按钮-sign-up-for-Github" class="headerlink" title="点击注册按钮[sign up for Github]"></a>点击注册按钮[sign up for Github]</h5><ul>
-<li>输入你的邮箱，点击continue</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx@qq.com  </span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>输入密码</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">........</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>输入用户名</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>确认创建</li>
-</ul>
-<h4 id="GithubSHH配置"><a href="#GithubSHH配置" class="headerlink" title="GithubSHH配置"></a>GithubSHH配置</h4><h5 id="打开git-bash"><a href="#打开git-bash" class="headerlink" title="打开git-bash"></a>打开git-bash</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="生成ras密钥"><a href="#生成ras密钥" class="headerlink" title="生成ras密钥"></a>生成ras密钥</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;email.qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h5 id="输入你需要保存密钥的文件"><a href="#输入你需要保存密钥的文件" class="headerlink" title="输入你需要保存密钥的文件"></a>输入你需要保存密钥的文件</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter file in which to save the key(/c/Users/Administrator/.ssh/id_rsa)</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">默认 回车即可</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="输入密码"><a href="#输入密码" class="headerlink" title="输入密码"></a>输入密码</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">默认回车 不填密码</span></span><br><span class="line">Enter same passphrase again:</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">再次确认，继续回车</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The key fingerprint is:</span><br><span class="line">*********************</span><br></pre></td></tr></table></figure>
-
-<h5 id="登录github设置"><a href="#登录github设置" class="headerlink" title="登录github设置"></a>登录github设置</h5><ul>
-<li>登录Github账号</li>
-<li>点击头像中的setting</li>
-<li>点击SSH and GPG keys</li>
-<li>点击SSH keys中的New SSH key</li>
-<li>Title中输入你的名字</li>
-<li>Key输入上面默认地址的文件中的密钥</li>
-</ul>
-<h4 id="本地配置HEXO"><a href="#本地配置HEXO" class="headerlink" title="本地配置HEXO"></a>本地配置HEXO</h4><h5 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://hexo.io/zh-cn/docs/</span><br></pre></td></tr></table></figure>
-
-<h5 id="在本地新建文件夹"><a href="#在本地新建文件夹" class="headerlink" title="在本地新建文件夹"></a>在本地新建文件夹</h5><p>用来部署HEXO</p>
-<h5 id="打开CMD"><a href="#打开CMD" class="headerlink" title="打开CMD"></a>打开CMD</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd 创建的目录</span><br></pre></td></tr></table></figure>
-
-<h5 id="输入你复制的安装命令"><a href="#输入你复制的安装命令" class="headerlink" title="输入你复制的安装命令"></a>输入你复制的安装命令</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">安装hexo</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"># 初始化博客</span><br><span class="line">hexo init blog名</span><br><span class="line"># 进入博客</span><br><span class="line">cd blog名</span><br><span class="line"># 安装依赖</span><br><span class="line">npm install</span><br><span class="line"># 运行</span><br><span class="line">hexo s -p 5555</span><br><span class="line"># 查看博客 </span><br><span class="line">http://localhost:5555</span><br></pre></td></tr></table></figure>
-
-<h4 id="博客发布到github"><a href="#博客发布到github" class="headerlink" title="博客发布到github"></a>博客发布到github</h4><p>找到配置文件&#x2F;themes&#x2F;_config.yml文件</p>
-
+          <h1 id="Mr-ZHANGZHIJIE-is-my-friend"><a href="#Mr-ZHANGZHIJIE-is-my-friend" class="headerlink" title="Mr ZHANGZHIJIE is my friend"></a>Mr ZHANGZHIJIE is my friend</h1>
       
     </div>
 
